@@ -4,7 +4,7 @@ node js version v20.16.0
 
 first clone the projet
 
-git clone https://github.com/kishanmihani/my-app
+git clone https://github.com/kishanmihani/my-app.git
 
 second ##npm install
 
