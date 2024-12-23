@@ -10,15 +10,7 @@ import {
   getPaginationRowModel
 } from "@tanstack/react-table"
 // import { Table ,TableCell,TableRow,TableHeader,TableBody ,TableHead} from "./table" 
-import {
-    Table,
-    TableBody,
-    TableCell,
-    TableHead,
-    TableHeader,
-    TableRow,
-  } from "@/components/ui/table"
-import { useState } from "react"
+
 import React from "react"
 
 interface DataTableProps<TData, TValue> {
@@ -54,7 +46,7 @@ export function DataTable<TData, TValue>({
     onColumnFiltersChange:setcoloumnfil
   })
   return (
-    <div >
+    <div className="p-2.5 w-full">
       <div>
         
       <h1 className="text-3xl font-extrabold dark:text-white"><small className=" font-semibold text-violet-500 dark:text-violet-400">User List data</small></h1>
@@ -69,7 +61,7 @@ export function DataTable<TData, TValue>({
       <hr />
       <div className="overflow-auto divtable">
       <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-        <thead className=" sticky  top-0 text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+        <thead className=" position-sticky  top-0 text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
           {table.getHeaderGroups().map((headerel) => {
                return (
                        <tr key={headerel.id} data-id={headerel.id} className='theadtr'>
