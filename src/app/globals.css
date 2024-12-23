@@ -19,3 +19,12 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+.divtable{
+height:calc(100vh - 200px) ;
+}
+.pagination{
+display:flex;
+justify-content:space-between;
+}
